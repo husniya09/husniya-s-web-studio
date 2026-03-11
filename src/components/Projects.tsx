@@ -10,8 +10,8 @@ const Projects = () => {
         "A modern and responsive website for a beauty salon featuring elegant design, service listings, appointment booking interface, and gallery showcasing the salon's work.",
       techStack: ["HTML", "CSS", "JavaScript"],
       image: beautySalonPreview,
-      demoLink: "#",
-      sourceLink: "#",
+      demoLink: "https://preview--elegant-beauty-glow.lovable.app/",
+      sourceLink: "index.html",
       featured: true,
     },
   ];
