@@ -1,5 +1,6 @@
 import { ExternalLink, Github, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import beautySalonPreview from "@/assets/beauty-salon-preview.png";
 
 const Projects = () => {
   const projects = [
@@ -8,7 +9,7 @@ const Projects = () => {
       description:
         "A modern and responsive website for a beauty salon featuring elegant design, service listings, appointment booking interface, and gallery showcasing the salon's work.",
       techStack: ["HTML", "CSS", "JavaScript"],
-      image: null,
+      image: beautySalonPreview,
       demoLink: "#",
       sourceLink: "#",
       featured: true,
@@ -46,14 +47,22 @@ const Projects = () => {
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image placeholder */}
                 <div className="relative aspect-video md:aspect-auto overflow-hidden bg-gradient-to-br from-accent to-blush">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="w-20 h-20 mx-auto rounded-2xl bg-primary/20 flex items-center justify-center mb-3">
-                        <Sparkles className="w-10 h-10 text-primary" />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center p-8">
+                        <div className="w-20 h-20 mx-auto rounded-2xl bg-primary/20 flex items-center justify-center mb-3">
+                          <Sparkles className="w-10 h-10 text-primary" />
+                        </div>
+                        <p className="text-muted-foreground text-sm">Project Preview</p>
                       </div>
-                      <p className="text-muted-foreground text-sm">Project Preview</p>
                     </div>
-                  </div>
+                  )}
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
