@@ -40,7 +40,7 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      href: "#",
+      href: "https://github.com/husniya09",
       color: "hover:text-foreground",
     },
     {
@@ -52,7 +52,7 @@ const Contact = () => {
     {
       name: "Instagram",
       icon: Instagram,
-      href: "#",
+      href: "https://www.instagram.com/_ro'zimboyeva_.1",
       color: "hover:text-pink-500",
     },
   ];
