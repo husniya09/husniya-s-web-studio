@@ -1,5 +1,6 @@
 import { ExternalLink, Github, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import beautySalonPreview from "@/assets/beauty-salon-preview.png";
 
 const Projects = () => {
   const projects = [
@@ -8,7 +9,7 @@ const Projects = () => {
       description:
         "A modern and responsive website for a beauty salon featuring elegant design, service listings, appointment booking interface, and gallery showcasing the salon's work.",
       techStack: ["HTML", "CSS", "JavaScript"],
-      image: null,
+      image: beautySalonPreview,
       demoLink: "#",
       sourceLink: "#",
       featured: true,
